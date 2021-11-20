@@ -1,0 +1,312 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>FPSTec</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MJDH3GYS0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4MJDH3GYS0');
+</script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="https://fpstec.github.io/Tienda/">Tienda</a></li>
+						    	<li><a href="team.html">Nuestro Equipo</a></li>
+						    	<li><a href="inspiraciones.html">Inspiracion</a></li>
+								<li><a href="contactanos.html">Contactanos</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				      <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+						<!----//search-scripts---->
+				    
+		           <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	</div>
+	<div class="banner">
+	<!-- start slider -->
+       <div id="fwslider">
+         <div class="slider_container">
+			 <style>
+				 p  {color:#FBFCFC;}
+			 </style>
+            <div class="slide"> 
+                <!-- Slide image -->
+               <img src="images/fps_1.jpg" class="img-responsive" alt=""/>
+                <!-- /Slide image -->
+                <!-- Texts container -->
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <!-- Text title -->
+                        <h1 class="title">FPSTec<br></h1><p>Hola bienvenido a nuestra pagina web, somos una empresa conformada por 5 estudiantes de la UPC de la carrera de Ingeniería de Sistemas de Información. Juntos conformamos la empresa “FPSTec” que trabaja en el rubro de tecnología, comercializando productos y servicios de computo. Contamos con los mejores componentes para que puedas armar tu PC gamer y se personalizado a tus gustos y necesidades.</p>
+                        <!-- /Text title -->
+                        <div class="button"><a href="#">Ver Detalles</a></div>
+                    </div>
+                </div>
+               <!-- /Texts container -->
+            </div>
+            <!-- /Duplicate to create more slides -->
+            <div class="slide">
+               <img src="images/fps_2.jpg" class="img-responsive" alt=""/>
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <h1 class="title">¿Que ofrecemos?<br></h1><p>FPS Tec ofrece todo tipo de componentes para computadoras y laptops al mejor precio. Trabajamos con marcas reconocidas mundialmente, así como también trato personalizado, respetuoso y eficiente a todos nuestros clientes</p>
+                       	<div class="button"><a href="#">Ver Detalles</a></div>
+                    </div>
+                </div>
+            </div>
+			<div class="slide">
+				<img src="images/fondo3.jpg" class="img-responsive" alt=""/>
+				 <div class="slide_content">
+					 <div class="slide_content_wrap">
+						 <h1 class="title">Renueva tu computadora<br></h1><p>Necesitas renovar o repotenciar tu computadora, FPSTec tu mejor opcion, siguenos en nuestras redes y obten un cupon de 10% de descuento.</p>
+							<div class="button"><a href="#">Ver Detalles</a></div>
+					 </div>
+				 </div>
+			 </div>
+            <!--/slide -->
+        </div>
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+       </div>
+       <!--/slider -->
+      </div>
+	  <div class="main">
+		<div class="content-top">
+			<h2>De todo para ti</h2>
+			<p>Encuentra tus marcas favoritas</p>
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo3">
+				<li><img src="http://assets.stickpng.com/images/58568d224f6ae202fedf2720.png" /></li>
+				<li><img src="data:image/png;base64,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" /></li>
+				<li><img src="data:image/png;base64,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" /></li>
+				<li><img src="https://logodownload.org/wp-content/uploads/2014/04/hp-logo-1.png" /></li>
+				<li><img src="https://logodownload.org/wp-content/uploads/2017/03/dell-logo-1-1.png" /></li>
+			</ul>
+		<h3>Productos exclusivos</h3>
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+	<div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+			  <div class="col-md-5">
+				<h3>¿Que<br>hacemos?</h3>
+				<p class="m_1">Nos dedicamos a vender componentes para computadoras y laptops al mejor, nuestro publico objetivo son jovenes que buscan un ordenador optimizado a su estilo y dependiendo al uso que le dara</p>
+				
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<h3 class="m_3">Valores</h3>
+			<div class="close_but"><i class="close1"> </i></div>
+			  <div class="row">
+				<div class="column-one">
+					<div class="col-md-3 top_box">
+						<div class="view view-ninth"><a href="single.html">
+						  <img src="images/valor1.jpg" class="img-responsive" alt=""/>
+						  <div class="mask mask-1"> </div>
+						  <div class="mask mask-2"> </div>
+							<div class="content">
+							  <h2>Responsabilidad</h2>
+							  <p>FPS Tec tiene las capacidades de tomar decisiones para cumplir los compromisos acordados</p>
+							</div>
+						 </a> </div>
+						<h4 class="m_4"><a href="#">Responsabilidad</a></h4>
+						<p class="m_5">FPS Tec tiene las capacidades de tomar decisiones para cumplir los compromisos acordados</p>
+					  </div>
+				</div>
+				<div class="colunm-two">
+					<div class="col-md-3 top_box" >
+						<div class="view view-ninth"><a href="single.html">
+						<img src="images/valor2.jpg" class="img-responsive" alt=""/>
+						<div class="mask mask-1"> </div>
+						<div class="mask mask-2"> </div>
+						  <div class="content">
+							<h2>Honestidad</h2>
+							<p>Las acciones de FPS Tec están guiadas dentro de un marco de franqueza y transparencia</p>
+						  </div>
+						</a> </div>
+					   <h4 class="m_4"><a href="#">Honestidad</a></h4>
+					   <p class="m_5">Las acciones de FPS Tec están guiadas dentro de un marco de franqueza y transparencia</p>
+					</div>
+				</div>
+                
+				
+			</div>
+		 </div>
+	    </div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Marcas</h4>
+							<li><a href="#">AMD</a></li>
+							<li><a href="#">Intel</a></li>
+							<li><a href="#">NVidia</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Sobre nosotros</h4>
+							<li><a href="#">Mision</a></li>
+							<li><a href="#">Vision</a></li>
+							<li><a href="#">Equipo</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Atencion al cliente</h4>
+							<li><a href="#">Contactanos</a></li>
+							<li><a href="#">Preguntas frecuentes</a></li>
+							<li><a href="#">Libro de reclamaciones</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Nuestras redes</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="https://www.facebook.com/FPS-Tec-110376924758775 "><span> </span></a></li>
+							  <li class="youtube"><a href="https://www.youtube.com/channel/UC10p-QcTRTkm1MQeuvD2KwA"><span> </span></a></li>
+							  <li class="instagram"><a href="https://www.instagram.com/fpstec_sac/"><span> </span></a></li>	
+							  <li class="pinterest"><a href="https://blogfpstec.blogspot.com"><span> </span></a></li>	
+							  										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>2021-2 Social media<a href="#" target="_blank"></a></p>
+		            </div>
+					  
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>

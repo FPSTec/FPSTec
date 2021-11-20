@@ -1,0 +1,233 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>FPSTec</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+    <!-- light-box -->
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+   <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="https://fpstec.github.io/Tienda/">Tienda</a></li>
+						    	<li><a href="team.html">Nuestro equipo</a></li>
+						    	<li class="current"><a href="inspiraciones.html">Inspiracion</a></li>
+								<li><a href="contactanos.html">Contactanos	</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				   
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row ex_box">
+				<h3 class="m_2">Nuestras Inspiraciones</h3>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/insp1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/insp1.jpg" class="img-responsive" alt=""><span> </span>
+					
+					<div>
+						<p class="m_5">Nos inspiramos a crear esta empresa porque creemos que es posible armar una computadora perfecta de acuerdo a las necesidades del cliente, con esta idea nosotros tenemos la mision de brindar muchas alternativas al cliente para que el elija  el mejor acorde a su bolsillo.</p>
+					</div>
+					
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/insp2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/insp2.jpg" class="img-responsive" alt=""><span> </span>
+					
+					<div>
+						<p class="m_5">Muchas personas al comprar se sienten inseguras al no saber si los componentes con los que estan armando su pc son las que eligio, es por ello que nuestra empresa te brinda transparencia al momento de tu compra y al armar tu pc. Nosotros armamos tu computadora en presencia tuya.</p>
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/insp3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/insp3.jpg" class="img-responsive" alt=""><span> </span>
+					
+					<div>
+						<p class="m_5">La inspiración del nombre de FPS Tec se origina en las tres primeras letras que son las siglas de fotogramas por segundo. En el mundo de lo videojuegos, se refiere a la fluidez que correrá un juego, pero nuestro enfoque es la potenciación que queremos generar a la tecnología, con lo cual se finaliza nuestra formulación del nombre FPS Tec.</p>
+					</div>
+				</a></div>
+				</div>
+		    </div>
+		    <div class="row ex_box">
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/insp4.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/insp4.jpg" class="img-responsive" alt=""><span> </span>
+					
+					<div>
+						<p class="m_5">FPS Tec surgio de la idea de varias personas que estaban en busca de una computadora que fuese ideal
+							para cada uno. Tal razon nos motivo a la creacion de nuestra empresa para asi, poder ofrecerle el servicio
+							que las personas buscan. Existen varias empresas que ofrecen tal utilidad, no obstante, el haber pasado por una situcion
+							similar a la de nuestros clientes nos ayuda a brindarles un mejor trato y asistencia. Y esta es una de las razones 
+							por la que nos inspira a seguir adelante.</p>
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/insp5.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/insp5.jpg" class="img-responsive" alt=""><span> </span>
+					
+					<div>
+						<p class="m_5">Nos inpiramos a crear esta empresa</p>
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a href="#" ><img src="images/logo.png" class="img-responsive" alt=""><span> </span>
+					
+				</a></div>
+				</div>
+		    </div>
+		    
+		 </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Marcas</h4>
+						<li><a href="#">AMD</a></li>
+						<li><a href="#">Intel</a></li>
+						<li><a href="#">NVidia</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Sabre nosotros</h4>
+						<li><a href="#">Mision</a></li>
+						<li><a href="#">Vision</a></li>
+						<li><a href="#">Equipo</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Atencion al cliente</h4>
+						<li><a href="#">Contactanos</a></li>
+						<li><a href="#">Preguntas frecuentes</a></li>
+						<li><a href="#">Libro de reclamaciones</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Nuestras redes</h4>
+						<div class="footer_search">
+						   <form>
+							<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+							<input type="submit" value="Go">
+						   </form>
+						</div>
+						<ul class="social">	
+							<li class="facebook"><a href="https://www.facebook.com/FPS-Tec-110376924758775 "><span> </span></a></li>
+							<li class="youtube"><a href="https://www.youtube.com/channel/UC10p-QcTRTkm1MQeuvD2KwA"><span> </span></a></li>
+							<li class="instagram"><a href="https://www.instagram.com/fpstec_sac/"><span> </span></a></li>	
+							<li class="pinterest"><a href="https://blogfpstec.blogspot.com"><span> </span></a></li>										  				
+						</ul>
+						   
+					</ul>
+				</div>
+			</div>
+			<div class="row footer_bottom">
+				<div class="copy">
+				   <p>2021-2 Social media<a href="http://w3layouts.com" target="_blank"></a></p>
+				</div>
+				  
+			   </div>
+		</div>
+	</div>
+</body>	
+</html>
